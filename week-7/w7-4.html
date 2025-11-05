@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Math Object Demo</title>
+    <script>
+        function mathDemo() {
+            alert("Value of PI: " + Math.PI);
+            alert("Value of Euler's number e: " + Math.E);
+            let num = 7.8;
+            alert("Original number: " + num);
+            alert("Rounded: " + Math.round(num));  
+            alert("Ceil: " + Math.ceil(num));      
+            alert("Floor: " + Math.floor(num));    
+            alert("Square root: " + Math.sqrt(num)); 
+            alert("Absolute value: " + Math.abs(-num)); 
+            alert("Power: 2^3 = " + Math.pow(2, 3)); 
+            alert("Random number (0 to 1): " + Math.random()); 
+            let randomInt = Math.floor(Math.random() * 100) + 1;
+            alert("Random integer (1-100): " + randomInt);
+        }
+    </script>
+</head>
+<body>
+    <h1>Math Object Example</h1>
+    <button onclick="mathDemo()">Run Math Demo</button>
+</body>
+</html>

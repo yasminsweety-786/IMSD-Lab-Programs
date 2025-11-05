@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Object Demo</title>
+    <script>
+        function arrayDemo() {
+            let fruits = ["Apple", "Banana", "Cherry"];
+            alert("Number of fruits: " + fruits.length);
+            fruits.push("Mango");       
+            fruits.unshift("Strawberry"); 
+            alert("Fruits after adding: " + fruits.join(", "));
+            let lastFruit = fruits.pop();   
+            let firstFruit = fruits.shift(); 
+            alert("Removed fruits: " + firstFruit + " and " + lastFruit);
+            alert("Fruits after removal: " + fruits.join(", "));
+            let index = fruits.indexOf("Banana");
+            alert("Index of Banana: " + index);
+            fruits.reverse();
+            alert("Reversed fruits: " + fruits.join(", "));
+            fruits.sort();
+            alert("Sorted fruits: " + fruits.join(", "));
+            let fruitLengths = fruits.map(fruit => fruit.length);
+            alert("Length of each fruit: " + fruitLengths.join(", "));
+        }
+    </script>
+</head>
+<body>
+    <h1>Array Object Example</h1>
+    <button onclick="arrayDemo()">Run Array Demo</button>
+</body>
+</html>

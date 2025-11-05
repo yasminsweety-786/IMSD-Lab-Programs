@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RegExp Object Demo</title>
+</head>
+<body>
+<h2>Email Validation using RegExp Object</h2>
+<input type="text" id="email" placeholder="Enter email">
+<button onclick="validateEmail()">Validate</button>
+<p id="result"></p>
+<script>
+  function validateEmail() {
+    let input = document.getElementById("email").value;
+    let pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$/;
+    let regex = new RegExp(pattern);
+    let result = regex.test(input);  
+    let match = input.match(regex);  
+    let execResult = regex.exec(input); 
+    document.getElementById("result").innerHTML = `
+      <strong>Validation Result:</strong> ${result ? "Valid Email ✅" : "Invalid Email ❌"}<br>
+      <strong>Match:</strong> ${match ? match[0] : "No match"}<br>
+      <strong>Exec Output:</strong> ${execResult ? execResult[0] : "No match"}<br>
+      <strong>RegExp Source:</strong> ${regex.source}<br>
+      <strong>Global Flag:</strong> ${regex.global}<br>
+      <strong>Ignore Case:</strong> ${regex.ignoreCase}<br>
+      <strong>Multiline:</strong> ${regex.multiline}
+    `;
+  }
+</script>
+</body>
+</html>

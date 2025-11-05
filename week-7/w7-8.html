@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>User-Defined Object Example</title>
+</head>
+<body>
+<h2>Student Object Demo</h2>
+<button onclick="createStudent()">Create and Display Student</button>
+<p id="output"></p>
+<script>
+  function Student(name, age, course) {
+    this.name = name;
+    this.age = age;
+    this.course = course;
+    this.getCourse = function() {
+      return this.course;
+    };
+    this.setCourse = function(newCourse) {
+      this.course = newCourse;
+    };
+    this.display = function() {
+      return `Name: ${this.name} <br> Age: ${this.age} <br> Course: ${this.course}`;
+    };
+  }
+  function createStudent() {
+    let student1 = new Student("John Doe", 20, "Computer Science");
+    student1.setCourse("Data Science");
+    document.getElementById("output").innerHTML = `
+      <strong>Student Details:</strong><br> ${student1.display()}<br><br>
+      <strong>Access Course using Getter:</strong> ${student1.getCourse()} `;
+  }
+</script>
+</body>
+</html>
