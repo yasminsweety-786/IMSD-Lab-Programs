@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, #667eea, #764aa1);
+            box-shadow: rgba(0,0,0,0.3);
+
+        }
+       h2{
+        margin-top: -10px;
+       }
+        .university{
+         background: linear-gradient(#79c3de,135deg,rgb(76, 116, 180));
+            width: 60vh;
+            border: 5px solid rgb(144, 91, 177);
+            border-radius: 5px;
+            margin: 30px auto;
+            padding: 12px;
+        }
+        h1{
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* }
+        .university p{
+            background-color: coral;
+
+        } */
+        
+        .university + p {
+            background-color: #666;
+            color: aliceblue;
+
+        }
+           h2~p{
+            background-color: lightgray;
+            
+          }
+ 
+        div +p{
+            background-color: rgb(213, 213, 206);
+        } 
+        p{
+            background-color: rgba(32, 187, 127, 0.466);
+        }
+
+    </style>
+</head>
+<body>
+  <h1> Aditya University Information</h1>  
+  <div class="university">
+    <h2>
+        CSE
+    </h2>
+    <p>Head: Ms. Sudha rani</p>
+    <p>Associate Profissor</p>
+    <h2> Faculty</h2>
+    <p>Prof. ramesh</p>
+    <p>Prof.suresh</p>
+   
+
+<div class="department">
+   <h2> IT</h2>
+    <p>Head: Mr.rambabu</p>
+    <p>Associate Profissor</p>
+    <h2> Faculty</h2>
+    <p>Prof.Balaram</p>
+    <p>Prof.kalyan</p>
+</div>
+<p> This is for testing</p>
+</div>
+</body>
+</html>

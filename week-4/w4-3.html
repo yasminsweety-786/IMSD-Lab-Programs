@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    body
+    {
+        background: linear-gradient(135deg, #3cb7ac,#3e96b9 );
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        padding: 20px;
+        display: inline-block;
+     }
+        h2{
+         background-color: rgb(192, 142, 175);
+         color: blueviolet;
+         box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+         display: flexbox;
+         width: 100%;
+         height : 30px;
+         text-align: center;
+         border-radius: 7px;
+         margin: 20px 20px 15px 12px;
+         font-family: Arial,  sans-serif;
+    cursor: pointer;
+        margin-left: -3px;
+        }
+        .login_box{
+           background-color:rgb(193, 141, 172);
+           padding:40px ;
+          border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+           width: 300px;
+           text-align: center;
+        }
+        .login_box input[type="text"],
+    .login_box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+    }
+ .login_box button{
+            background-color: #a16fa9;
+            color: white;
+            padding: 12px;
+            border:none;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .login_box button:hover{
+            background-color: #5a67d8;
+        }
+        .login_box .xtra{
+    margin-top: 12px;
+    color: #666;     
+}  
+  </style>
+</head>
+<body>
+    <div class="container">
+    <h2> Login</h2>
+    <div class="login_box">
+     <form >
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="password" required>
+        <button type="submit">Login</button>
+        <div class="xtra">
+            forgot password? <a href="#"> click here</a>
+        </div>
+    </form>
+    </div>
+    </div>
+</body>
+</html>
