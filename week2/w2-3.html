@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head><title>forms</title></head>
+    <body>
+        <h2  align="center">Student Registration Form</h2>
+        <form>
+            <table border="2" cellpadding="10" cellspacing="0" align="center" > 
+                  <tr>
+                <th colspan="2">Student Details</th>
+            </tr>
+            <tr>
+            <th>Full Name:</th>
+               <td><input type="text" placeholder="Enter full name"></td> 
+               </tr>
+              
+               <tr>
+               <th>EMail:</th>
+               <td><input type="email" placeholder="example@gmil.com"></td>
+            </tr>
+            <th>Password:</th>
+            <td><input type="password"> </td>
+            <tr>
+            <th>Mobile Number:</th>
+            <td><input type="number" placeholder="10-digit number"></td>
+            </tr>
+            <tr>
+                <th>age:</th>
+                <td><input text="number"></td>
+            </tr>
+            <tr>
+                <th>Date of birth:</th>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <th>Gender:</th><td>
+            <input type="radio" value="Male"> Male
+            <input type="radio" value="Female"> Female
+             <input type="radio" value="Others">Others
+             </td>
+        </tr>
+               <tr>
+            <th>Course interested:</th>
+            <td>
+                <input type="checkbox">C
+                 <input type="checkbox">c++
+                  <input type="checkbox">Java
+                   <input type="checkbox">Python
+                    <input type="checkbox">Web development
+            </td>
+        </tr>
+        <tr>
+            <th>Branch:</th>
+            <td>
+                <select>
+                    <option>---select branch----</option>
+                    <option>CSE</option>
+                    <option>AIML</option>
+                    <option>DS</option>
+                    <option>MEC</option>
+                    <option>CIVIL</option>
+                </select>
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <th>College website:</th>
+            <td><input type="text" placeholder="https://www.example.com"></td>
+        </tr>
+         <tr>
+                <th>Address:</th>
+                <td><textarea rows="3" cols="30" placeholder="Enter your address"></textarea></td>
+            </tr>
+            <tr>
+                <th>Upload Resume:</th>
+                <td><input type="submit" value="choose file">No file chosen
+                </td>
+            </tr>
+            <tr>
+                <th>Preffered Time Slot:</th>
+                <td><input type="time"></td>
+            </tr>
+            <tr>
+                 <th>Skill Level(0-10):</th>
+                 <td><input type="range" min="0" max="100"></td>
+            </tr>
+            <tr>
+                <th>Favorite:</th>
+                <td><input type="color"></td>
+            </tr>
+                        <tr>
+                <th colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </th>
+            </tr>
+    </table>
+        </form>
+    </body>
+</html>
